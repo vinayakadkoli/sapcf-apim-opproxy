@@ -2,7 +2,7 @@
 ## A deep dive exercise to setup Principal Propagation / SSO flows in API Management
 This GitHub project has the API Proxies, Configurations, Destinations, Java Microservices and AppRouter projects in order to run the OnPremise connectivity examples.
 
-## __Resources used in the video series__
+ __Resources used in the video series__
 
 ## Part 1 - Introduction to Security flows and Principal propagation
 
@@ -43,3 +43,36 @@ Resources to setup User Token exchange mechanism in SAP Cloud Foundry:
 Resources to setup OAuth2SAMLBearerAssertion mechanism in SAP Cloud Foundry:
 * [Setting](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/8ebf60c82a8e4cfc904f441c0c0acd6b.html) up Trust between Accounts and Destination settings for OAuth2SAMLBearer Assertion mechanism.
 * Destination [attributes](https://help.sap.com/viewer/cca91383641e40ffbe03bdc78f00f681/Cloud/en-US/c69ea6aacd714ad2ae8ceb5fc3ceea56.html) needed for OAuth2SAMLBearerAssertion.
+
+---
+## Part 4 - Neo OAuth2SAMLBearer flow OnPremise connectivity
+
+Resources to setup OAuth2SAMLBearerAssertion mechanism in Neo environments:
+
+* Understanding OAuth SAML Bearer assertion [flows](https://help.sap.com/viewer/368c481cd6954bdfa5d0435479fd4eaf/Cloud/en-US/f93122629816412c911f827a5eb62e5e.html) in Neo.
+
+Deploying a Fiori App in Neo to demonstrate SSO flows:
+* Using WebIDE to build a simple Fiori [App](https://developers.sap.com/tutorials/odata-03-webide-odata-features.html) in Neo.
+
+---
+
+## Part 5 - Neo orchestrating a SAML Assertion flow with OnPremise connectivity.
+
+Resources to setup a SAML based flow to establish single single sign on:
+* [Policy Template](https://api.sap.com/policytemplate/Principal_Propagation_via_SAML) in API Business Hub for SAML Verification and Generation flows.
+
+---
+
+## Part 6 - CF SAML Assertion Flow with OnPremise connectivity plan.
+
+Resoures to setup a SAML flow from API Management tenant running in CF by directly authenticating to XSUAA:
+* [Blog](https://blogs.sap.com/2019/09/02/blog-series-json-web-tokens-jwt-verification-policies-in-sap-cloud-platform-api-management/) series to learn more about conducting a JWT based verification scheme in API Management.
+* [Policy template](https://api.sap.com/policytemplate/SAPCloudFoundrySAML2OAuthFlow) from API Business Hub to orchestrate the SAML2Grant exchange for OAuth token
+
+---
+
+## Part 7 - CF Client Credentials flow for principal propagation with OnPremise connectivity plan.
+
+Resoures to setup a Client Credentials flow from API Management tenant running in CF by directly authenticating to XSUAA:
+
+*  [Policy template](https://api.sap.com/policytemplate/SAPCloudFoundryXSUAAJWTToken) from API Business Hub to orchestrate the Client credentials flow for OAuth token
