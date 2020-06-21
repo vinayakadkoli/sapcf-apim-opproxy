@@ -1,3 +1,5 @@
+<img src ="Apps/api-management.png" width =40>
+
 # API Management Security series
 ## A deep dive exercise to setup Principal Propagation / SSO flows in API Management
 This GitHub project has the API Proxies, Configurations, Destinations, Java Microservices and AppRouter projects in order to run the OnPremise connectivity examples.
